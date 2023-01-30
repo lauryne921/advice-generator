@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%); 
+    --neon-green: hsl(150, 100%, 66%); 
+    --grayish-blue: hsl(217, 19%, 38%); 
+    --dark-grayish-blue: hsl(217, 19%, 24%); 
+    --dark-blue: hsl(218, 23%, 16%); 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark-blue);
+    color: var(--light-cyan);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+section {
+    background-color: var(--dark-grayish-blue);
+    height: auto;
+    width: 28rem;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#advice-number {
+    color: var(--neon-green);
+}
+
+#advice {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.divider {
+    margin-bottom: 2rem;
+}
+
+#dice-container {
+    padding: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer; 
+}
+#dice-container:hover {
+    box-shadow: 0 0 15px var(--neon-green);
+}
+
+
+
+
+@media screen and (max-width: 450px) {
+    section {
+        width: 18rem;
+    }
+
+    #advice {
+        font-size: 25px;
+    }
+
+    .divider {
+        width: 18rem;
+    }
+}
